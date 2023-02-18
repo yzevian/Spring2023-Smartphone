@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  TwoTables
+//  restaurant app
 //
-//  Created by evian Zhao on 2/13/23.
+//  Created by evian Zhao on 2/17/23.
 //
 
 import UIKit
@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     let restaurantCellReuseIdentifier = "RestaurantCell"
     let foodItemCellReuseIdentifier = "FoodItemCell"
-
+    
 
     @IBOutlet weak var tblViewTop: UITableView!
     
@@ -69,6 +69,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return cell
             
         }else{
+            
             let cell = tableView.dequeueReusableCell(withIdentifier: foodItemCellReuseIdentifier, for: indexPath)
                         let selectedRow = tblViewTop.indexPathForSelectedRow?.row ?? 0
                         cell.textLabel?.text = food[selectedRow][indexPath.row]
@@ -77,4 +78,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
 }
+
 
