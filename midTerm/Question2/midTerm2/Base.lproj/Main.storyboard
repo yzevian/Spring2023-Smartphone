@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="midTerm2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type the Symbol" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9oL-yo-kfp">
+                                <rect key="frame" x="5" y="69" width="383" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENL-Z5-gGh">
+                                <rect key="frame" x="5" y="113" width="383" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="sCM-nR-crp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Search"/>
+                                <connections>
+                                    <action selector="searchAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3aa-xv-2dY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e31-yO-Xoj">
+                                <rect key="frame" x="5" y="168" width="383" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LpX-Xc-PJ8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGV-hF-qUV">
+                                <rect key="frame" x="5" y="238" width="383" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="vpP-xe-jEa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLI-lA-mc6">
+                                <rect key="frame" x="5" y="298" width="383" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9sE-so-i5r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ENL-Z5-gGh" secondAttribute="trailing" constant="5" id="0oA-t3-26V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e31-yO-Xoj" secondAttribute="trailing" constant="5" id="D81-7a-VcW"/>
+                            <constraint firstItem="9oL-yo-kfp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="DYi-HL-ulC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kGV-hF-qUV" secondAttribute="trailing" constant="5" id="FX9-XT-cYl"/>
+                            <constraint firstItem="RLI-lA-mc6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="HUB-Ca-Icx"/>
+                            <constraint firstItem="e31-yO-Xoj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="MLq-aq-4T1"/>
+                            <constraint firstItem="ENL-Z5-gGh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="Mkb-JB-cCM"/>
+                            <constraint firstItem="e31-yO-Xoj" firstAttribute="top" secondItem="ENL-Z5-gGh" secondAttribute="bottom" constant="20" id="O6n-4h-AKr"/>
+                            <constraint firstItem="RLI-lA-mc6" firstAttribute="top" secondItem="kGV-hF-qUV" secondAttribute="bottom" constant="20" id="QiY-Pu-voG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RLI-lA-mc6" secondAttribute="trailing" constant="5" id="bcj-PC-PmW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9oL-yo-kfp" secondAttribute="trailing" constant="5" id="gpg-vE-oOS"/>
+                            <constraint firstItem="RLI-lA-mc6" firstAttribute="top" secondItem="kGV-hF-qUV" secondAttribute="bottom" constant="20" id="hUC-Jq-vwk"/>
+                            <constraint firstItem="9oL-yo-kfp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="jZH-NO-GBr"/>
+                            <constraint firstItem="kGV-hF-qUV" firstAttribute="top" secondItem="e31-yO-Xoj" secondAttribute="bottom" constant="20" id="ljQ-q9-SQF"/>
+                            <constraint firstItem="e31-yO-Xoj" firstAttribute="top" secondItem="ENL-Z5-gGh" secondAttribute="bottom" constant="20" id="m5Z-aX-nD5"/>
+                            <constraint firstItem="ENL-Z5-gGh" firstAttribute="top" secondItem="9oL-yo-kfp" secondAttribute="bottom" constant="10" id="srK-nD-bpM"/>
+                            <constraint firstItem="kGV-hF-qUV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="wly-oI-8CS"/>
+                            <constraint firstItem="kGV-hF-qUV" firstAttribute="top" secondItem="e31-yO-Xoj" secondAttribute="bottom" constant="30" id="x9b-Mw-lvH"/>
+                            <constraint firstItem="ENL-Z5-gGh" firstAttribute="top" secondItem="9oL-yo-kfp" secondAttribute="bottom" constant="10" id="xYU-4j-GQJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblCompany" destination="e31-yO-Xoj" id="j3d-FH-JB3"/>
+                        <outlet property="lblPrice" destination="kGV-hF-qUV" id="xUY-4G-pfa"/>
+                        <outlet property="lblWebsite" destination="RLI-lA-mc6" id="L1b-b3-5GE"/>
+                        <outlet property="tblSymbol" destination="9oL-yo-kfp" id="N0W-nF-uP4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
