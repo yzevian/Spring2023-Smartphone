@@ -62,33 +62,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="111" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DGD-Ss-wl8">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="111" translatesAutoresizingMaskIntoConstraints="NO" id="DGD-Ss-wl8">
                                 <rect key="frame" x="87" y="187" width="219" height="478"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFd-9c-X4z">
-                                <rect key="frame" x="5" y="703" width="383" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="inM-oW-Yn8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="msB-ed-ucC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="DGD-Ss-wl8" firstAttribute="leading" secondItem="msB-ed-ucC" secondAttribute="leading" constant="87" id="7Vh-Td-3m5"/>
                             <constraint firstItem="DGD-Ss-wl8" firstAttribute="top" secondItem="msB-ed-ucC" secondAttribute="top" constant="84" id="DcV-66-hw8"/>
-                            <constraint firstItem="msB-ed-ucC" firstAttribute="trailing" secondItem="gFd-9c-X4z" secondAttribute="trailing" constant="5" id="UBn-d1-g57"/>
-                            <constraint firstItem="msB-ed-ucC" firstAttribute="bottom" secondItem="gFd-9c-X4z" secondAttribute="bottom" constant="75" id="VZD-cP-JSm"/>
                             <constraint firstItem="DGD-Ss-wl8" firstAttribute="centerY" secondItem="tza-xA-6gL" secondAttribute="centerY" id="WeE-HW-zUU"/>
                             <constraint firstItem="DGD-Ss-wl8" firstAttribute="centerX" secondItem="tza-xA-6gL" secondAttribute="centerX" id="X5b-p5-iBK"/>
-                            <constraint firstItem="gFd-9c-X4z" firstAttribute="leading" secondItem="msB-ed-ucC" secondAttribute="leading" constant="5" id="agV-EN-f33"/>
                             <constraint firstItem="DGD-Ss-wl8" firstAttribute="centerY" secondItem="tza-xA-6gL" secondAttribute="centerY" id="cTt-gE-RTb"/>
                             <constraint firstItem="DGD-Ss-wl8" firstAttribute="centerX" secondItem="tza-xA-6gL" secondAttribute="centerX" id="i2V-CV-b3p"/>
                         </constraints>
@@ -96,7 +84,6 @@
                     <navigationItem key="navigationItem" id="HR4-7d-BRd"/>
                     <connections>
                         <outlet property="lblTxt" destination="DGD-Ss-wl8" id="dn1-QM-qMd"/>
-                        <outlet property="lbllable" destination="gFd-9c-X4z" id="tEt-Ym-6nH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eey-h9-goi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
